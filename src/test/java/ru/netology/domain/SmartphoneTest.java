@@ -1,6 +1,8 @@
 package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
+import ru.netology.manager.ProductManager;
+import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,14 +12,14 @@ class SmartphoneTest {
         Smartphone smartphone = new Smartphone();
 
     }
-
     @Test
     public void shouldEUseEquals() {
-        Smartphone smartphone1 = new Smartphone(4, "Apple", 1000, "VVV");
-        Smartphone smartphone2 = new Smartphone(4, "Apple", 1000, "VVV");
+        Smartphone smartphone1 =new Smartphone(2,"Sony",1000,"RRR");
+        Smartphone smartphone2 =new Smartphone(2,"Sony",1000,"RRR");
 
-        assertEquals(smartphone1, smartphone2);
-
+        assertEquals(smartphone1,smartphone2);
 
     }
+
+
 }

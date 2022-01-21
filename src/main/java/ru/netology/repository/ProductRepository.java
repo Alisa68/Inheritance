@@ -7,6 +7,10 @@ import java.util.Arrays;
 public class ProductRepository {
     private Product[] items = new Product[0];
 
+    public Product[] findAll() {
+        return items;
+    }
+
     public void save(Product item) {
         int length = items.length + 1;
         Product[] tmp = new Product[length];
@@ -38,8 +42,9 @@ public class ProductRepository {
         items = tmp;
     }
 
+}
 
 
-    }
+
 
 
